@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EstateLedger | Property Discovery</title>
+    <link href="./assets/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#/">
+          <span class="brand-mark"><i class="bi bi-buildings"></i></span>
+          <span>EstateLedger</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/properties">Buy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/dashboard">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/sell">List property</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/seller">My listings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/admin">Admin</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2" id="accountActions"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="demo-notice">Portfolio demo · Sample listings and estimated insights · Data stays in this browser</div>
+    <main id="appRoot" class="page-shell" tabindex="-1"></main>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastRegion"></div>
+
+    <footer class="site-footer border-top">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>EstateLedger portfolio demo. Listing approval is simulated; no legal verification is performed.</span>
+        <span>Support: care@estateledger.test</span>
+      </div>
+    </footer>
+
+    <script src="./assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
